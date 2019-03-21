@@ -1,0 +1,169 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  color: #333333;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}﻿
+
+a,
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  text-decoration:none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.body-container {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+/* Хедер */
+
+.main-navigation {
+  position: relative;
+}
+
+.main-header-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.site-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.site-navigation li {
+  box-sizing: border-box;
+  width: 239px;
+  padding: 15px;
+  padding-left: 72px;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-left: auto;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+  text-align: right;
+  padding-right: 72px;
+}
+
+.site-navigation a {
+  color: #000000;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+/* Хедер */
+
+
+
+/* Главная */
+
+.short-description-wrapper {
+  min-height: 724px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-end;
+  background-color: #4e82a7;
+  background-image: url("../img/sedona-main-background.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 -83px;
+}
+
+.short-description {
+  position: relative;
+  background-color: #ffffff;
+  flex-grow: 1;
+  padding-top: 60px;
+}
+
+.short-description h2 {
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  width: 440px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+}
+
+.short-description p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 51px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.short-description::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 59px;
+  top: -56px;
+  background-color: #ffffff;
+}
+
+.short-description::after {
+  content: "";
+  position: absolute;
+  width: 1200px;
+  height: 59px;
+  top: -58px;
+  background-image: url("../img/polygon.png");
+  background-repeat: no-repeat;
+}
+
+
+/* Главная */
