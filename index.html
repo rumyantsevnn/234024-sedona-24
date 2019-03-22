@@ -23,10 +23,112 @@
     <main class="main-container">
       <h1 class="visually-hidden">Седона - туристический городок.</h1>
       <div class="short-description-wrapper">
+        <div class="welcome-sedona-wrapper">
+          <img src="img/welcome.png" class="welcome-sedona" width="459" height="353" alt="Добро пожаловать в Седону">
+        </div>
         <section class="short-description">
           <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </section>
+      </div>
+      <div class="reason-with-picture">
+        <section class="reasons reasons-blue-background">
+          <h2>Настоящий городок</h2>
+          <span>— №1 —</span>
+          <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        </section>
+        <img src="img/real_town.jpg" class="real-town" width="800" height="256" alt="Здания в Седоне">
+      </div>
+      <ul class="housing-food-souvenirs">
+        <li>
+          <div class="housing"></div>
+          <b>Жильё</b>
+          <span>Рекомендуем пожить в настоящем мотеле, всё как в кино!</span>
+        </li>
+        <li>
+          <div class="food"></div>
+          <b>Еда</b>
+          <span>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span>
+        </li>
+        <li>
+          <div class="souvenirs"></div>
+          <b>Сувениры</b>
+          <span>Не только китайского, но и местного производства!</span>
+        </li>
+      </ul>
+      <div class="reason-with-picture">
+        <img src="img/bridge.jpg" class="bridge"  width="800" height="256" alt="Горы и каньоны в Седоне">
+        <section class="reasons reasons-blue-background">
+          <h2>Там есть<br> Мост дьявола</h2>
+          <span>— №2 —</span>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </section>
+      </div>
+      <ul class="reasons-gray-background">
+        <li>
+          <section class="reasons">
+            <h2>Небольшая площадь</h2>
+            <span>— №3 —</span>
+            <p>Все достопримечательности находятся очень близко</p>
+          </section>
+        </li>
+        <li>
+          <section class="reasons">
+            <h2>Красивая дорога</h2>
+            <span>— №4 —</span>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </section>
+        </li>
+        <li>
+          <section class="reasons">
+            <h2>Мало туристов</h2>
+            <span>— №5 —</span>
+            <p class="reason-special">Большинство едет в гранд каньон и толпится там</p>
+          </section>
+        </li>
+      </ul>
+      <div class="hotel-search">
+        <b>Заинтересовались?</b>
+        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a href="/form.html" class="hotel-search-link">Поиск гостиницы в Седоне</a>
+      </div>
+      <div class="map-wrapper">
+        <img src="img/map.jpg" class="map" width="1200" height="594" alt="Карта">
+        <form action="https://echo.htmlacademy.ru" class="hotel-search-form" method="post">
+          <p>
+            <label class="date-label" for="arrival-date">Дата заезда:</label>
+            <input type="text" class="form-field-date" id="arrival-date" name="guest-arrival-date" placeholder="24 апреля 2017">
+            <a href="" class="calendar-icon">Календарь</a>
+          </p>
+          <p>
+            <label class="date-label" for="departure-date">Дата выезда:</label>
+            <input type="text" class="form-field-date" id="departure-date" name="guest-departure-date" placeholder="4 июля 2017">
+            <a href="" class="calendar-icon">Календарь</a>
+          </p>
+          <div class="adult-children">
+            <p>
+              <label class="adult-label" for="adult">Взрослые:</label>
+              <button class="minus-button" type="button" aria-label="Убавить количество взрослых">
+                <span class="visually-hidden">-</span>
+              </button>
+              <input type="text" class="form-field-people" id="adult" name="adult-number" placeholder="2">
+              <button class="plus-button" type="button" aria-label="Прибавить количество взрослых">
+                <span class="visually-hidden">+</span>
+              </button>
+            </p>
+            <p>
+              <label class="children-label" for="children">Дети:</label>
+              <button class="minus-button" type="button" aria-label="Убавить количество взрослых">
+                <span class="visually-hidden">-</span>
+              </button>
+              <input type="text" class="form-field-people" id="children" name="children-number" placeholder="0">
+              <button class="plus-button" type="button" aria-label="Прибавить количество взрослых">
+                <span class="visually-hidden">+</span>
+              </button>
+            </p>
+          </div>
+          <button type="submit" class="form-button">Найти</button>
+        </form>
       </div>
     </main>
   </body>
