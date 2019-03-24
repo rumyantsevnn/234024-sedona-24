@@ -37,7 +37,7 @@
           <span>— №1 —</span>
           <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </section>
-        <img src="img/real_town.jpg" class="real-town" width="800" height="256" alt="Здания в Седоне">
+        <img src="img/real_town.jpg" class="reasons-picture" width="800" height="256" alt="Здания в Седоне">
       </div>
       <ul class="housing-food-souvenirs">
         <li>
@@ -57,7 +57,7 @@
         </li>
       </ul>
       <div class="reason-with-picture">
-        <img src="img/bridge.jpg" class="bridge"  width="800" height="256" alt="Горы и каньоны в Седоне">
+        <img src="img/bridge.jpg" class="reasons-picture"  width="800" height="256" alt="Горы и каньоны в Седоне">
         <section class="reasons reasons-blue-background">
           <h2>Там есть<br> Мост дьявола</h2>
           <span>— №2 —</span>
@@ -92,44 +92,73 @@
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a href="/form.html" class="hotel-search-link">Поиск гостиницы в Седоне</a>
       </div>
-      <div class="map-wrapper">
-        <img src="img/map.jpg" class="map" width="1200" height="594" alt="Карта">
-        <form action="https://echo.htmlacademy.ru" class="hotel-search-form" method="post">
-          <p>
-            <label class="date-label" for="arrival-date">Дата заезда:</label>
-            <input type="text" class="form-field-date" id="arrival-date" name="guest-arrival-date" placeholder="24 апреля 2017">
-            <a href="" class="calendar-icon">Календарь</a>
-          </p>
-          <p>
-            <label class="date-label" for="departure-date">Дата выезда:</label>
-            <input type="text" class="form-field-date" id="departure-date" name="guest-departure-date" placeholder="4 июля 2017">
-            <a href="" class="calendar-icon">Календарь</a>
-          </p>
-          <div class="adult-children">
-            <p>
-              <label class="adult-label" for="adult">Взрослые:</label>
-              <button class="minus-button" type="button" aria-label="Убавить количество взрослых">
-                <span class="visually-hidden">-</span>
-              </button>
-              <input type="text" class="form-field-people" id="adult" name="adult-number" placeholder="2">
-              <button class="plus-button" type="button" aria-label="Прибавить количество взрослых">
-                <span class="visually-hidden">+</span>
-              </button>
-            </p>
-            <p>
-              <label class="children-label" for="children">Дети:</label>
-              <button class="minus-button" type="button" aria-label="Убавить количество взрослых">
-                <span class="visually-hidden">-</span>
-              </button>
-              <input type="text" class="form-field-people" id="children" name="children-number" placeholder="0">
-              <button class="plus-button" type="button" aria-label="Прибавить количество взрослых">
-                <span class="visually-hidden">+</span>
-              </button>
-            </p>
-          </div>
-          <button type="submit" class="form-button">Найти</button>
-        </form>
-      </div>
     </main>
+    <footer class="footer-container">
+      <form action="https://echo.htmlacademy.ru" class="hotel-search-form" method="post">
+        <p>
+          <label class="date-label" for="arrival-date"><span>Дата заезда:</span></label>
+          <input type="text" class="form-field-date" id="arrival-date" name="guest-arrival-date" placeholder="24 апреля 2017">
+          <a href="" class="calendar-icon">Календарь</a>
+        </p>
+        <p>
+          <label class="date-label" for="departure-date"><span>Дата выезда:</span></label>
+          <input type="text" class="form-field-date" id="departure-date" name="guest-departure-date" placeholder="4 июля 2017">
+          <a href="" class="calendar-icon">Календарь</a>
+        </p>
+        <div class="adult-children">
+          <p>
+            <label class="adult-label" for="adult"><span>Взрослые:</span></label>
+            <button class="minus-button" type="button" aria-label="Убавить количество взрослых">
+              <span class="visually-hidden">-</span>
+            </button>
+            <input type="text" class="form-field-people" id="adult" name="adult-number" placeholder="2">
+            <button class="plus-button" type="button" aria-label="Прибавить количество взрослых">
+              <span class="visually-hidden">+</span>
+            </button>
+          </p>
+          <p>
+            <label class="children-label" for="children"><span>Дети:</span></label>
+            <button class="minus-button" type="button" aria-label="Убавить количество взрослых">
+              <span class="visually-hidden">-</span>
+            </button>
+            <input type="text" class="form-field-people" id="children" name="children-number" placeholder="0">
+            <button class="plus-button" type="button" aria-label="Прибавить количество взрослых">
+              <span class="visually-hidden">+</span>
+            </button>
+          </p>
+        </div>
+        <button type="submit" class="form-button">Найти</button>
+      </form>
+      <div class="footer-wrapper">
+        <div class="visitsedona">
+          <a href="" class="visitsedona-link">#visitsedona</a>
+        </div>
+        <div class="social">
+          <ul class="social-networks">
+            <li>
+              <a href="" class="social-button social-twitter">
+              <span class="visually-hidden">twitter</span>
+            </a>
+          </li>
+            <li>
+              <a href="" class="social-button social-facebook">
+                <span class="visually-hidden">facebook</span>
+              </a>
+            </li>
+            <li>
+              <a href="" class="social-button social-youtube">
+                <span class="visually-hidden">youtube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="by-htmlacademy">
+          <span>Website by</span>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy-footer-link">
+            <span class="visually-hidden">htmlacademy</span>
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

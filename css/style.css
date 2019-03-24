@@ -138,8 +138,8 @@ input[type="radio"].visually-hidden {
 .short-description {
   position: relative;
   background-color: #ffffff;
-  padding-top: 59px;
-  padding-bottom: 1px;
+  padding: 60px;
+  padding-bottom: 50px;
 }
 
 .short-description h2 {
@@ -158,7 +158,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 50px;
   max-width: 500px;
   line-height: 26px;
   text-align: center;
@@ -173,8 +172,10 @@ input[type="radio"].visually-hidden {
 }
 
 .reasons {
-  padding-top: 1px;
-  padding-bottom: 1px;
+  box-sizing: border-box;
+  padding: 0 60px;
+  padding-top: 47px;
+  padding-bottom: 59px;
   max-width: 400px;
   background-color: #eeeeee;
 }
@@ -183,8 +184,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   margin: 0 auto;
-  margin-top: 46px;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
   font-size: 21px;
   font-weight: 700;
   color: #000000;
@@ -197,31 +197,33 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   margin-bottom: 20px;
   max-width: 60px;
+  text-align: center;
 }
 
 .reasons p {
   margin: 0;
   padding: 0;
-  padding: 0 60px;
-  margin-bottom: 59px;
   text-align: center;
 }
 
+.reasons-picture {
+  max-width: 800px;
+}
+
+p.reason-special {
+  padding: 0 15px;
+}
+
 .reasons-blue-background {
+  padding: 0 49px;
+  padding-top: 47px;
+  padding-bottom: 59px;
   background-color: #81b3d2;
   color: #ffffff;
 }
 
 .reasons-blue-background h2 {
   color: #ffffff;
-}
-
-.reasons-blue-background p {
-  padding: 0 49px;
-}
-
-p.reason-special {
-  padding: 0 73px;
 }
 
 .reasons-gray-background {
@@ -239,7 +241,7 @@ p.reason-special {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 82px;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -248,14 +250,16 @@ p.reason-special {
 }
 
 .housing-food-souvenirs li {
+  box-sizing: border-box;
   max-width: 400px;
+  padding: 52px 55px;
 }
 
 .housing,
 .food,
 .souvenirs {
   position: relative;
-  padding-top: 132px;
+  padding-top: 80px;
   margin-bottom: 30px;
 }
 
@@ -307,18 +311,17 @@ p.reason-special {
   font-size: 21px;
   font-weight: 700;
   text-align: center;
-  padding: 0 140px;
   margin-bottom: 23px;
 }
 
 .housing-food-souvenirs span {
   display: block;
-  padding: 0 55px;
   text-align: center;
 }
 
 .hotel-search {
-  padding-top: 1px;
+  padding: 0 300px;
+  padding-top: 49px;
 }
 
 .hotel-search b {
@@ -330,7 +333,6 @@ p.reason-special {
   line-height: 36px;
   text-align: center;
   margin: 0 auto;
-  margin-top: 49px;
   margin-bottom: 25px;
 }
 
@@ -356,23 +358,27 @@ p.reason-special {
   padding: 30px 15px;
 }
 
-.map-wrapper {
-  position: relative;
+/* Главная */
+
+
+
+/* Футер */
+
+
+.footer-container {
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
 }
 
 .hotel-search-form {
   box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
   background-color: #ffffff;
   width: 568px;
   padding: 60px 55px;
   padding-top: 54px;
   padding-bottom: 55px;
+  margin: 0 auto;
+  margin-bottom: 79px;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
@@ -394,7 +400,11 @@ p.reason-special {
 
 .date-label
  {
-  padding-top: 6px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 ::placeholder {
@@ -482,12 +492,20 @@ a.calendar-icon {
 }
 
 .adult-label {
-  padding-top: 6px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-right: 41px;
 }
 
 .children-label {
-  padding-top: 6px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-right: 26px;
 }
 
@@ -503,4 +521,122 @@ a.calendar-icon {
   padding: 16px 50px;
 }
 
-/* Главная */
+.footer-wrapper {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  background-color: #f9fbf6;
+  opacity: 0.9;
+}
+
+.visitsedona {
+  max-width: 400px;
+  padding: 46px 132px;
+}
+
+.visitsedona-link {
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.social {
+  max-width: 400px;
+  padding: 36px 125px;
+}
+
+.social-networks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-networks li {
+  padding-right: 6px;
+}
+
+.social-networks li:nth-child(3n) {
+  padding-right: 0;
+}
+
+.social-button {
+  position: relative;
+  display: block;
+  padding: 24px 23px;
+  background-color: #81b3d2;
+}
+
+.social-twitter::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 17px;
+  height: 15px;
+  background-image: url("../img/t.png");
+  background-repeat: no-repeat;
+}
+
+.social-facebook::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 12px;
+  height: 22px;
+  background-image: url("../img/fb-icon.png");
+  background-repeat: no-repeat;
+}
+
+.social-youtube::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 20px;
+  height: 16px;
+  background-image: url("../img/youtube.png");
+  background-repeat: no-repeat;
+}
+
+.by-htmlacademy {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  padding-left: 103px;
+}
+
+.by-htmlacademy span {
+  color: #000000;
+  line-height: 26px;
+  padding-right: 8px;
+}
+
+.htmlacademy-footer-link {
+  position: relative;
+  display: block;
+  padding: 21px 58px;
+}
+
+.htmlacademy-footer-link::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 115px;
+  height: 41px;
+  background-image: url("../img/logo_name.png");
+}
+
+/* Футер */
